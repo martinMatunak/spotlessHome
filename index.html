@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spotless Home — požičovňa tepovačov Devínska Nová Ves</title>
+<meta name="description" content="Prenájom profesionálneho tepovača Kärcher Puzzi 10/1 v Devínskej Novej Vsi. 25 € na 24 hodín, dovoz k dverám zadarmo, zaškolenie v cene.">
+<link rel="canonical" href="https://spotlesshome.sk/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spotless Home — požičovňa tepovačov Devínska Nová Ves">
+<meta property="og:description" content="Tepovač Kärcher u vás doma. 25 € na 24 hodín, dovoz v Devínskej zadarmo.">
+<meta property="og:locale" content="sk_SK">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Spotless Home",
+  "description": "Požičovňa profesionálnych tepovačov Kärcher v Devínskej Novej Vsi.",
+  "telephone": "+421900000000",
+  "url": "https://spotlesshome.sk/",
+  "areaServed": [
+    { "@type": "Place", "name": "Devínska Nová Ves" },
+    { "@type": "Place", "name": "Devín" },
+    { "@type": "Place", "name": "Dúbravka" },
+    { "@type": "Place", "name": "Lamač" },
+    { "@type": "Place", "name": "Záhorská Bystrica" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bratislava — Devínska Nová Ves",
+    "addressCountry": "SK"
+  },
+  "priceRange": "25 € / 24 h"
+}
+</script>
+
+<style>
+:root{
+  --petrol:#0E2E2B;
+  --petrol-soft:#1B4642;
+  --paper:#FBFBF9;
+  --sage:#CBD8D1;
+  --sage-dim:#E4EBE7;
+  --aqua:#2FA88F;
+  --signal:#E8A33D;
+  --rule:rgba(14,46,43,.16);
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--petrol);
+  font-family:"Karla","Segoe UI",system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,.num,.tag-price{
+  font-family:"Archivo","Segoe UI",system-ui,sans-serif;
+  font-weight:800;
+  letter-spacing:-.03em;
+  line-height:1.02;
+  margin:0;
+}
+
+a{color:inherit}
+
+.wrap{
+  width:100%;
+  max-width:1040px;
+  margin:0 auto;
+  padding:0 22px;
+}
+
+:focus-visible{
+  outline:3px solid var(--aqua);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+/* ---------- header ---------- */
+
+.top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:22px 0 0;
+}
+.brand{
+  font-family:"Archivo",sans-serif;
+  font-weight:800;
+  font-size:19px;
+  letter-spacing:-.03em;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+.brand .drop{
+  width:13px;height:13px;
+  border-radius:50% 50% 50% 2px;
+  background:var(--aqua);
+  transform:rotate(45deg);
+  flex:none;
+}
+.top nav{
+  display:flex;
+  gap:22px;
+  font-size:15px;
+  font-weight:500;
+}
+.top nav a{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px}
+.top nav a:hover{border-color:var(--petrol)}
+@media(max-width:680px){ .top nav{display:none} }
+
+/* ---------- hero ---------- */
+
+.hero{padding:58px 0 8px}
+
+.hero h1{
+  font-size:clamp(2.6rem,8.4vw,5.1rem);
+}
+.hero h1 .line2{color:var(--petrol-soft)}
+
+.lede{
+  margin:26px 0 0;
+  max-width:47ch;
+  font-size:clamp(1.02rem,2.4vw,1.16rem);
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:14px;
+  margin-top:32px;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--petrol);
+  color:var(--paper);
+  text-decoration:none;
+  font-weight:700;
+  font-size:17px;
+  padding:15px 26px;
+  border-radius:3px;
+}
+.btn:hover{background:var(--petrol-soft)}
+
+.btn-ghost{
+  display:inline-block;
+  text-decoration:none;
+  font-weight:700;
+  font-size:17px;
+  padding:15px 4px;
+  border-bottom:2px solid var(--petrol);
+}
+
+/* price tag */
+.tag{
+  margin-top:52px;
+  display:inline-flex;
+  align-items:stretch;
+  border:1.5px solid var(--petrol);
+  border-radius:4px;
+  overflow:hidden;
+  background:var(--sage-dim);
+}
+.tag > div{padding:16px 22px}
+.tag .tag-price{
+  font-size:2.5rem;
+  background:var(--signal);
+  display:flex;
+  align-items:center;
+}
+.tag .tag-note{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  font-size:15px;
+  line-height:1.35;
+  border-left:1.5px solid var(--petrol);
+}
+.tag .tag-note b{font-weight:700}
+
+/* ---------- generic section ---------- */
+
+section{padding:74px 0}
+.sec-head{
+  font-size:clamp(1.6rem,4.6vw,2.4rem);
+  margin-bottom:8px;
+}
+.sec-intro{max-width:52ch;margin:0 0 34px}
+
+/* ---------- cennik ---------- */
+
+.pricing{
+  background:var(--petrol);
+  color:var(--paper);
+}
+.pricing .sec-head{color:var(--paper)}
+
+.rows{border-top:1px solid rgba(251,251,249,.28)}
+.row{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:20px;
+  padding:20px 0;
+  border-bottom:1px solid rgba(251,251,249,.28);
+}
+.row .what{font-weight:700;font-size:1.12rem}
+.row .when{font-size:14px;opacity:.72;display:block;font-weight:400;margin-top:3px}
+.row .cost{
+  font-family:"Archivo",sans-serif;
+  font-weight:800;
+  font-size:1.9rem;
+  letter-spacing:-.03em;
+  white-space:nowrap;
+}
+.row.free .cost{color:var(--signal)}
+
+.pricing-note{
+  margin-top:26px;
+  font-size:15px;
+  opacity:.8;
+  max-width:52ch;
+}
+
+/* ---------- co vycistite ---------- */
+
+.things{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+}
+.thing{
+  background:var(--paper);
+  padding:24px 20px;
+}
+.thing b{
+  display:block;
+  font-family:"Archivo",sans-serif;
+  font-weight:700;
+  letter-spacing:-.02em;
+  font-size:1.06rem;
+  margin-bottom:5px;
+}
+.thing span{font-size:15px;line-height:1.5;display:block;opacity:.85}
+
+/* ---------- postup (real sequence) ---------- */
+
+.steps{counter-reset:s;display:grid;gap:2px}
+.step{
+  display:grid;
+  grid-template-columns:64px 1fr;
+  gap:18px;
+  align-items:start;
+  padding:24px 0;
+  border-top:1px solid var(--rule);
+}
+.step:last-child{border-bottom:1px solid var(--rule)}
+.step .num{
+  counter-increment:s;
+  font-size:2.3rem;
+  color:var(--aqua);
+}
+.step .num::before{content:counter(s)}
+.step h3{font-size:1.16rem;margin-bottom:6px}
+.step p{margin:0;max-width:50ch;font-size:16px}
+
+/* ---------- oblast ---------- */
+
+.area{background:var(--sage-dim)}
+.area-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:26px;
+  padding:0;
+  list-style:none;
+}
+.area-list li{
+  border:1.5px solid var(--petrol);
+  border-radius:999px;
+  padding:8px 17px;
+  font-size:15px;
+  font-weight:500;
+  background:var(--paper);
+}
+.area-list li.home{
+  background:var(--petrol);
+  color:var(--paper);
+  font-weight:700;
+}
+
+/* ---------- pred a po ---------- */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;
+  margin-top:12px;
+}
+.shot{
+  aspect-ratio:4/3;
+  border:1.5px dashed var(--rule);
+  border-radius:4px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:18px;
+  font-size:14px;
+  opacity:.75;
+  background:var(--sage-dim);
+}
+
+/* ---------- kontakt ---------- */
+
+.contact{
+  background:var(--petrol);
+  color:var(--paper);
+  padding:76px 0 96px;
+}
+.contact h2{color:var(--paper);font-size:clamp(1.7rem,5vw,2.6rem)}
+.contact p{max-width:46ch;margin:14px 0 30px}
+.phone{
+  font-family:"Archivo",sans-serif;
+  font-weight:800;
+  letter-spacing:-.03em;
+  font-size:clamp(2rem,7vw,3.2rem);
+  color:var(--signal);
+  text-decoration:none;
+  display:inline-block;
+  border-bottom:3px solid var(--signal);
+}
+.contact .hours{margin-top:28px;font-size:15px;opacity:.8}
+
+footer{
+  background:var(--petrol);
+  color:var(--paper);
+  border-top:1px solid rgba(251,251,249,.2);
+  padding:22px 0 100px;
+  font-size:14px;
+  opacity:.7;
+}
+
+/* ---------- sticky call bar (mobile) ---------- */
+
+.callbar{
+  position:fixed;
+  left:0;right:0;bottom:0;
+  background:var(--signal);
+  border-top:1.5px solid var(--petrol);
+  padding:13px 22px;
+  display:none;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  z-index:50;
+}
+.callbar b{font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:-.02em}
+.callbar small{display:block;font-weight:400;font-size:13px;opacity:.8}
+.callbar a{
+  background:var(--petrol);
+  color:var(--paper);
+  text-decoration:none;
+  font-weight:700;
+  padding:11px 20px;
+  border-radius:3px;
+  white-space:nowrap;
+}
+@media(max-width:680px){
+  .callbar{display:flex}
+  body{padding-bottom:72px}
+  footer{padding-bottom:30px}
+  .step{grid-template-columns:46px 1fr;gap:14px}
+  .step .num{font-size:1.8rem}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#"><span class="drop" aria-hidden="true"></span>Spotless Home</a>
+    <nav>
+      <a href="#cennik">Cenník</a>
+      <a href="#postup">Ako to funguje</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Tepovač u vás doma.<br><span class="line2">V Devínskej do hodiny.</span></h1>
+    <p class="lede">Požičiam vám profesionálny Kärcher Puzzi 10/1. Donesiem ho k dverám, ukážem, ako sa používa, a po skončení si ho vyzdvihnem. Vy len vytepujete.</p>
+
+    <div class="hero-actions">
+      <a class="btn" href="tel:+421900000000">Zavolať a rezervovať</a>
+      <a class="btn-ghost" href="#cennik">Pozrieť cenník</a>
+    </div>
+
+    <div class="tag">
+      <div class="tag-price">25 €</div>
+      <div class="tag-note"><b>na 24 hodín</b><span>dovoz v Devínskej zadarmo</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="cennik" class="pricing">
+  <div class="wrap">
+    <h2 class="sec-head">Cenník</h2>
+    <p class="sec-intro">Žiadne skryté poplatky. Zálohu vraciam v plnej výške pri vyzdvihnutí stroja.</p>
+
+    <div class="rows">
+      <div class="row">
+        <div class="what">24 hodín<span class="when">od prevzatia po vrátenie</span></div>
+        <div class="cost">25 €</div>
+      </div>
+      <div class="row">
+        <div class="what">Víkend<span class="when">piatok večer – nedeľa večer</span></div>
+        <div class="cost">40 €</div>
+      </div>
+      <div class="row">
+        <div class="what">Vratná záloha<span class="when">v hotovosti, vrátim pri prevzatí stroja</span></div>
+        <div class="cost">100 €</div>
+      </div>
+      <div class="row free">
+        <div class="what">Dovoz a odvoz v Devínskej<span class="when">k dverám, aj večer</span></div>
+        <div class="cost">0 €</div>
+      </div>
+    </div>
+
+    <p class="pricing-note">V cene je podlahová aj ručná hubica, čistiace tablety a krátke zaškolenie pri odovzdaní. Nič si nemusíte dokupovať.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec-head">Čo ním vyčistíte</h2>
+    <p class="sec-intro">Puzzi 10/1 strieka čistiaci roztok hlboko do vlákna a hneď ho aj vysaje aj so špinou. Nie je to vysávač na mokro — je to hĺbkové čistenie.</p>
+
+    <div class="things">
+      <div class="thing"><b>Sedačky a kreslá</b><span>Škvrny od kávy, vína aj rokov sedenia.</span></div>
+      <div class="thing"><b>Koberce</b><span>Aj veľké kusové, aj celoplošné.</span></div>
+      <div class="thing"><b>Matrace</b><span>Roztoče, pot, detské nehody.</span></div>
+      <div class="thing"><b>Interiér auta</b><span>Sedadlá, koberčeky, kufor.</span></div>
+      <div class="thing"><b>Stoličky a taburetky</b><span>Jedálenské, kancelárske.</span></div>
+      <div class="thing"><b>Detské veci</b><span>Autosedačky, kočíky, hracie deky.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="postup">
+  <div class="wrap">
+    <h2 class="sec-head">Ako to funguje</h2>
+    <p class="sec-intro">Od zavolania po čistú sedačku, bez toho, aby ste čokoľvek nakladali do auta.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num" aria-hidden="true"></div>
+        <div>
+          <h3>Zavoláte alebo napíšete</h3>
+          <p>Poviete, kedy to potrebujete. Ak je stroj voľný, dohodneme sa aj na dnes večer alebo zajtra ráno.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num" aria-hidden="true"></div>
+        <div>
+          <h3>Prinesiem a ukážem</h3>
+          <p>Donesiem stroj k dverám, naplním nádrž, ukážem obe hubice a vysvetlím, ako pracovať s rôznymi materiálmi. Trvá to päť minút.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num" aria-hidden="true"></div>
+        <div>
+          <h3>Vytepujete a ja si ho vyzdvihnem</h3>
+          <p>Máte na to 24 hodín alebo celý víkend. Potom si po stroj prídem a vrátim vám zálohu. Nemusíte ho ani vyprázdňovať.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="area">
+  <div class="wrap">
+    <h2 class="sec-head">Kam vozím</h2>
+    <p class="sec-intro">Bývam priamo v Devínskej, takže sem viem prísť rýchlo a bez poplatku. Do okolitých mestských častí po dohode.</p>
+    <ul class="area-list">
+      <li class="home">Devínska Nová Ves — zadarmo</li>
+      <li>Devín</li>
+      <li>Dúbravka</li>
+      <li>Lamač</li>
+      <li>Záhorská Bystrica</li>
+      <li>Bory</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sec-head">Pred a po</h2>
+    <p class="sec-intro">Rovnaké miesto, rovnaké svetlo, žiadne filtre.</p>
+    <div class="gallery">
+      <div class="shot">Sem vlož fotku sedačky pred a po</div>
+      <div class="shot">Sem vlož fotku koberca pred a po</div>
+      <div class="shot">Sem vlož fotku stroja s príslušenstvom</div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="contact">
+  <div class="wrap">
+    <h2>Voľný termín zistíte hneď</h2>
+    <p>Zavolajte a poviem vám, kedy je stroj k dispozícii. Ak nedvíham, som pravdepodobne u iného zákazníka — napíšte správu a ozvem sa.</p>
+    <a class="phone" href="tel:+421900000000">0900 000 000</a>
+    <p class="hours">Odovzdanie aj vyzdvihnutie po dohode, vrátane večerov, víkendov a sviatkov.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Spotless Home — požičovňa tepovačov, Devínska Nová Ves, Bratislava</div>
+</footer>
+
+<div class="callbar">
+  <div><b>25 € / 24 h</b><small>dovoz v Devínskej zadarmo</small></div>
+  <a href="tel:+421900000000">Zavolať</a>
+</div>
+
+</body>
+</html>
